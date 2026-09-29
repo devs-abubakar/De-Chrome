@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "De-chrome",
+  "version": "1.0",
+  "description": "An extension that turns your chrome into a cool interactive page where you can keep the shortcuts and bookmarks easily accessable. It helps in preventing procrastination and focus more on execution.",
+  "action": {
+    "default_title": "Save this page"
+  },
+  "background": { "service_worker": "./public/background.js" },
+  "chrome_url_overrides": { "newtab": "index.html" },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "indexDB"
+  ]
+}
